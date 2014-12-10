@@ -1,38 +1,25 @@
 ---
 layout: workshop
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
+venue: University of Colorado, Boulder
+address: Boulder, Colorado 80309
 country: United-States
-humandate: Feb 17-18, 2020
+humandate: Jan 05-06, 2015
 humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
+startdate: 2015-01-05
+enddate: 2015-01-06
+latlng: 40.0293099,-105.2399774
 registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-helper: ["John von Neumann"]
+instructor: ["Christina Koch", "Mariela Perignon", "Rachel Slaybaugh", "Leah Wasser"]
 contact: admin@software-carpentry.org
 #redirect: http://www.3rd.party.workshop.home.page.com
 #eventbrite: 00000000000
-lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
+lessons: ['Python', 'Git', 'Bash', ]
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your workshop.
     Please use three-letter month names for the 'humandate' field.
 -->
-
-<!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for workshop home pages.
-      <br/>
-      Please see
-      <a href="//github.com/swcarpentry/bc">github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your workshop.
-  </em></strong></p>
-</div>
 
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
@@ -45,10 +32,10 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     - for one waitlist room and one room use 253px,
     - for two waitlist room use 197px.
 -->
-{% if page.eventbrite %}
+<!-- {% if page.eventbrite %}
 <iframe
   src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="206px" scrolling="auto"></iframe>
-{% endif %}
+{% endif %} -->
 
 <h2>General Information</h2>
 
@@ -202,20 +189,6 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="novice/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="novice/ref/04-sql.html">Reference...</a></li>
     </ul>
   </div>
 </div>
