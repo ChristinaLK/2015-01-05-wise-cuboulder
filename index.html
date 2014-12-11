@@ -60,6 +60,20 @@ lessons: ['Python', 'Git', 'Bash', ]
   The course is aimed at graduate students and other researchers.
 </p>
 
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!-- {% if page.helper %}
+<p>
+  <strong>Helpers:</strong>
+  {{page.helper | join: ', ' %}}
+</p>
+{% endif %} -->
+
 <!--
     This block displays the address and links to a map showing directions.
 -->
