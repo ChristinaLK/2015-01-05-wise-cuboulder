@@ -4,7 +4,7 @@ root: ../..
 title: A Better Kind of Backup
 ---
 
-## Objectives
+### Objectives
 *   Explain which initialization and configuration steps are required once per machine,
     and which are required once per repository.
 *   Go through the modify-add-commit cycle for single and multiple files
@@ -389,7 +389,9 @@ but not yet committed.
 `git add` puts things in this area,
 and `git commit` then copies them to long-term storage (as a commit):
 
-<img src="img/git-staging-area.svg" alt="The Git Staging Area" />
+<div>
+  <img src="img/git-staging-area.svg" alt="The Git Staging Area" />
+</div>
 
 Let's watch as our changes to a file move from our editor
 to the staging area
@@ -505,7 +507,9 @@ we first need to add the changed files to the staging area
 (`git add`) and then commit the staged changes to the
 repository (`git commit`):
 
-<img src="img/git-committing.svg" alt="The Git Commit Workflow" />
+<div>
+  <img src="img/git-committing.svg" alt="The Git Commit Workflow" />
+</div>
 
 ### Exploring History
 
