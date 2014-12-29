@@ -2,8 +2,9 @@
 layout: lesson
 root: ../..
 title: Introducing Version Control
+level: novice
 ---
-Wolfman and Dracula have been hired by Universal Missions
+Wolfwoman and Viorica Dracula have been hired by Universal Missions
 (a space services spinoff from Euphoric State University)
 to investigate if it is possible to send their next planetary lander to Mars.
 They want to be able to work on the plans at the same time,
@@ -31,7 +32,7 @@ Version control is better than mailing files back and forth because:
 
 <div class="challenges" markdown="1">
 
-#### Challenges
+### Challenges
 
 On Wikipedia all changes and their authors are tracked. You can go
 [here](https://en.wikipedia.org/w/index.php?title=Mars&action=history)
