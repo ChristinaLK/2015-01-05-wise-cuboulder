@@ -595,7 +595,7 @@ index df0654a..b36abfd 100644
 ### Recovering Old Versions
 
 All right:
-we can save changes to files and see what we've changed&mdashhow
+we can save changes to files and see what we've changed&mdash;how
 can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
