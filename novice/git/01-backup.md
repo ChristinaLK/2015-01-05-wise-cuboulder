@@ -3,9 +3,8 @@ layout: lesson
 root: ../..
 title: A Better Kind of Backup
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+## Objectives
 *   Explain which initialization and configuration steps are required once per machine,
     and which are required once per repository.
 *   Go through the modify-add-commit cycle for single and multiple files
@@ -15,8 +14,6 @@ title: A Better Kind of Backup
 *   Restore old versions of files.
 *   Configure Git to ignore specific files,
     and explain why it is sometimes useful to do so.
-
-</div>
 
 We'll start by exploring how version control can be used
 to keep track of what one person did and when.
@@ -32,15 +29,14 @@ version control is much better for this than this:
 
 The first time we use Git on a new machine,
 we need to configure a few things.
-Here's how Dracula sets up his new laptop:
+Here's how Dracula sets up her new laptop:
 
 ~~~
-$ git config --global user.name "Vlad Dracula"
-$ git config --global user.email "vlad@tran.sylvan.ia"
+$ git config --global user.name "Viorica Dracula"
+$ git config --global user.email "viorica@tran.sylvan.ia"
 $ git config --global color.ui "auto"
 $ git config --global core.editor "nano"
 ~~~
-{:class="in"}
 
 (Please use your own name and email address instead of Dracula's,
 and please make sure you choose an editor that's actually on your system,
@@ -68,7 +64,6 @@ the flag `--global` tells Git to use the settings for every project on this mach
 > $ git config --global http.proxy proxy-url
 > $ git config --global https.proxy proxy-url
 > ~~~
-> {:class="in"}
 >
 > To disable the proxy, use
 >
@@ -76,7 +71,6 @@ the flag `--global` tells Git to use the settings for every project on this mach
 > $ git config --global --unset http.proxy
 > $ git config --global --unset https.proxy
 > ~~~
-> {:class="in"}
 
 ### Creating a Repository
 
@@ -88,7 +82,6 @@ Let's create a directory for our work:
 $ mkdir planets
 $ cd planets
 ~~~
-{:class="in"}
 
 and tell Git to make it a [repository](../../gloss.html#repository)&mdash;a place where
 Git can store old versions of our files:
@@ -96,7 +89,6 @@ Git can store old versions of our files:
 ~~~
 $ git init
 ~~~
-{:class="in"}
 
 If we use `ls` to show the directory's contents,
 it appears that nothing has changed:
@@ -104,7 +96,6 @@ it appears that nothing has changed:
 ~~~
 $ ls
 ~~~
-{:class="in"}
 
 But if we add the `-a` flag to show everything,
 we can see that Git has created a hidden directory called `.git`:
@@ -112,11 +103,9 @@ we can see that Git has created a hidden directory called `.git`:
 ~~~
 $ ls -a
 ~~~
-{:class="in"}
 ~~~
 .	..	.git
 ~~~
-{:class="out"}
 
 Git stores information about the project in this special sub-directory.
 If we ever delete it,
@@ -128,7 +117,6 @@ by asking Git to tell us the status of our project:
 ~~~
 $ git status
 ~~~
-{:class="in"}
 ~~~
 # On branch master
 #
@@ -136,7 +124,6 @@ $ git status
 #
 nothing to commit (create/copy files and use "git add" to track)
 ~~~
-{:class="out"}
 
 ### Tracking Changes to Files
 
@@ -149,7 +136,6 @@ In particular, this does not have to be the core.editor you set globally earlier
 ~~~
 $ nano mars.txt
 ~~~
-{:class="in"}
 
 Type the text below into the `mars.txt` file:
 
@@ -276,7 +262,7 @@ $ git log
 {:class="in"}
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Starting to think about Mars
@@ -313,7 +299,7 @@ $ cat mars.txt
 {:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 ~~~
 {:class="out"}
 
@@ -358,7 +344,7 @@ index df0654a..315bf3a 100644
 +++ b/mars.txt
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 ~~~
 {:class="out"}
 
@@ -444,7 +430,7 @@ $ cat mars.txt
 {:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -459,7 +445,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -494,7 +480,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -534,19 +520,19 @@ $ git log
 {:class="in"}
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Thoughts about the climate
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Concerns about Mars's moons on my furry friend
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Starting to think about Mars
@@ -578,7 +564,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -593,7 +579,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -628,7 +614,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -648,7 +634,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
@@ -699,7 +685,7 @@ $ cat mars.txt
 {:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 ~~~
 {:class="out"}
