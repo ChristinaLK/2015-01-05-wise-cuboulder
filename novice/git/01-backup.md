@@ -595,7 +595,7 @@ index df0654a..b36abfd 100644
 ### Recovering Old Versions
 
 All right:
-we can save changes to files and see what we've changed---how
+we can save changes to files and see what we've changed&mdashhow
 can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
@@ -818,11 +818,15 @@ nothing to commit, working directory clean
 *   The `.gitignore` file tells Git what files to ignore.
 
 
+### Challenge
+
 Create a new Git repository on your computer called `bio`.
-Write a three-line biography for yourself in a file called `me.txt`,
-commit your changes,
-then modify one line and add a fourth and display the differences
+*   Write a three-line biography for yourself in a file called `me.txt`,
+*   commit your changes,
+*   then modify one line and add a fourth and display the differences
 between its updated state and its original state.
+
+### Good Practices
 
 The following sequence of commands creates one Git repository inside another:
 
