@@ -392,7 +392,7 @@ and `git commit` then copies them to long-term storage (as a commit):
 !["The Git Staging Area"](https://github.com/ChristinaLK/2015-01-05-wise-cuboulder/tree/master/novice/git/img/git-staging-area.svg)
 
 <div>
-  <a href="https://github.com/ChristinaLK/2015-01-05-wise-cuboulder/tree/master/novice/git/"><img src="img/git-staging-area.svg" alt="The Git Staging Area" /></a>
+  <a href="https://raw.github.com/ChristinaLK/2015-01-05-wise-cuboulder/tree/master/novice/git/img/git-staging-area.svg"><img src="img/git-staging-area.svg" alt="The Git Staging Area" /></a>
 </div>
 
 
