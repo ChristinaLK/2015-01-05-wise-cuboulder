@@ -16,9 +16,9 @@ and anything that changes over time or needs to be shared
 can and should be stored in a version control system.
 
 1.  [Introducing Version Control](00-intro.md)
-2.  [A Better Kind of Backup](01-backup.html)
-3.  [Collaborating](02-collab.html)
-4.  [Conflicts](03-conflict.html)
-5.  [Open Science](04-open.html)
+2.  [A Better Kind of Backup](01-backup.md)
+3.  [Collaborating](02-collab.md)
+4.  [Conflicts](03-conflict.md)
+5.  [Open Science](04-open.md)
 
-[Reference](../ref/02-git.html)
+[Reference](../ref/02-git.md)
