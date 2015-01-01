@@ -92,42 +92,6 @@ $ pwd
 > its jargon. The result is as inconsistent as the roolz uv Inglish
 > speling, but we're stuck with it now.
 
-To understand what a "home directory" is,
-let's have a look at how the file system as a whole is organized.
-At the top is the [root directory](../../gloss.html#root-directory)
-that holds everything else.
-We refer to it using a slash character `/` on its own;
-this is the leading slash in `/users/nelle`.
-
-Inside that directory are several other directories:
-`bin` (which is where some built-in programs are stored),
-`data` (for miscellaneous data files),
-`users` (where users' personal directories are located),
-`tmp` (for temporary files that don't need to be stored long-term),
-and so on:
-
-<img src="img/filesystem.svg" alt="The Filesystem" />
-
-We know that our current working directory `/users/nelle` is stored inside `/users`
-because `/users` is the first part of its name.
-Similarly,
-we know that `/users` is stored inside the root directory `/`
-because its name begins with `/`.
-
-Underneath `/users`,
-we find one directory for each user with an account on this machine.
-The Mummy's files are stored in `/users/imhotep`,
-Wolfman's in `/users/larry`,
-and ours in `/users/nelle`,
-which is why `nelle` is the last part of the directory's name.
-
-<img src="img/home-directories.svg" alt="Home Directories" />
-
-> Notice that there are two meanings for the `/` character.
-> When it appears at the front of a file or directory name,
-> it refers to the root directory. When it appears *inside* a name,
-> it's just a separator.
-
 Let's see what's in Nelle's home directory by running `ls`,
 which stands for "listing":
 
@@ -449,6 +413,44 @@ pressing tab twice brings up a list of all the files,
 and so on.
 This is called [tab completion](../../gloss.html#tab-completion),
 and we will see it in many other tools as we go on.
+
+
+To understand what a "home directory" is,
+let's have a look at how the file system as a whole is organized.
+At the top is the [root directory](../../gloss.html#root-directory)
+that holds everything else.
+We refer to it using a slash character `/` on its own;
+this is the leading slash in `/users/nelle`.
+
+Inside that directory are several other directories:
+`bin` (which is where some built-in programs are stored),
+`data` (for miscellaneous data files),
+`users` (where users' personal directories are located),
+`tmp` (for temporary files that don't need to be stored long-term),
+and so on:
+
+<img src="img/filesystem.svg" alt="The Filesystem" />
+
+We know that our current working directory `/users/nelle` is stored inside `/users`
+because `/users` is the first part of its name.
+Similarly,
+we know that `/users` is stored inside the root directory `/`
+because its name begins with `/`.
+
+Underneath `/users`,
+we find one directory for each user with an account on this machine.
+The Mummy's files are stored in `/users/imhotep`,
+Wolfman's in `/users/larry`,
+and ours in `/users/nelle`,
+which is why `nelle` is the last part of the directory's name.
+
+<img src="img/home-directories.svg" alt="Home Directories" />
+
+> Notice that there are two meanings for the `/` character.
+> When it appears at the front of a file or directory name,
+> it refers to the root directory. When it appears *inside* a name,
+> it's just a separator.
+
 
 <div class="keypoints" markdown="1">
 
