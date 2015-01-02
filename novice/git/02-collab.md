@@ -8,6 +8,7 @@ title: Collaborating
 *   Explain what happens when a remote repository is cloned.
 *   Explain what happens when changes are pushed to or pulled from a remote repository.
 
+### Collaborating
 Version control really comes into its own
 when we begin to collaborate with other people.
 We already have most of the machinery we need to do this;
@@ -82,7 +83,6 @@ and run this command:
 ~~~
 $ git remote add origin https://github.com/vlad/planets
 ~~~
-{:class="in"}
 
 Make sure to use the URL for your repository rather than Vlad's:
 the only difference should be your username instead of `vlad`.
@@ -92,12 +92,10 @@ We can check that the command has worked by running `git remote -v`:
 ~~~
 $ git remote -v
 ~~~
-{:class="in"}
 ~~~
 origin   https://github.com/vlad/planets.git (push)
 origin   https://github.com/vlad/planets.git (fetch)
 ~~~
-{:class="out"}
 
 The name `origin` is a local nickname for your remote repository:
 we could use something else if we wanted to,
@@ -110,7 +108,6 @@ to the repository on GitHub:
 ~~~
 $ git push origin master
 ~~~
-{:class="in"}
 ~~~
 Counting objects: 9, done.
 Delta compression using up to 4 threads.
@@ -121,7 +118,6 @@ To https://github.com/vlad/planets
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ~~~
-{:class="out"}
 
 > ##### Proxy
 >
@@ -133,7 +129,6 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global http.proxy http://user:password@proxy.url
 > $ git config --global https.proxy http://user:password@proxy.url
 > ~~~
-> {:class="in"}
 >
 > When you connect to another network that doesn't use a proxy you will need to
 > tell Git to disable the proxy using
@@ -142,7 +137,6 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global --unset http.proxy
 > $ git config --global --unset https.proxy
 > ~~~
-> {:class="in"}
 
 > #### Password Managers
 >
@@ -154,7 +148,6 @@ Branch master set up to track remote branch master from origin.
 > ~~~
 > $ unset SSH_ASKPASS
 > ~~~
-> {:class="in"}
 >
 > You may want to add this command at the end of your `~/.bashrc` to make it the
 > default behavior.
@@ -174,13 +167,11 @@ We can pull changes from the remote repository to the local one as well:
 ~~~
 $ git pull origin master
 ~~~
-{:class="in"}
 ~~~
 From https://github.com/vlad/planets
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ~~~
-{:class="out"}
 
 Pulling has no effect in this case
 because the two repositories are already synchronized.
@@ -211,7 +202,6 @@ and then make a copy of this repository on your own computer:
 ~~~
 $ git clone https://github.com/vlad/planets.git
 ~~~
-{:class="in"}
 
 Replace 'vlad' with your partner's username (the one who owns the repository).
 
@@ -226,28 +216,23 @@ $ cd planets
 $ nano pluto.txt
 $ cat pluto.txt
 ~~~
-{:class="in"}
 ~~~
 It is so a planet!
 ~~~
-{:class="out"}
 ~~~
 $ git add pluto.txt
 $ git commit -m "Some notes about Pluto"
 ~~~
-{:class="in"}
 ~~~
  1 file changed, 1 insertion(+)
  create mode 100644 pluto.txt
 ~~~
-{:class="out"}
 
 then push the change to GitHub:
 
 ~~~
 $ git push origin master
 ~~~
-{:class="in"}
 ~~~
 Counting objects: 4, done.
 Delta compression using up to 4 threads.
@@ -257,7 +242,6 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/vlad/planets.git
    9272da5..29aba7c  master -> master
 ~~~
-{:class="out"}
 
 Note that we didn't have to create a remote called `origin`:
 Git does this automatically,
@@ -271,7 +255,6 @@ We can now download changes into the original repository on our machine:
 ~~~
 $ git pull origin master
 ~~~
-{:class="in"}
 ~~~
 remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (2/2), done.
@@ -285,24 +268,19 @@ Fast-forward
  1 file changed, 1 insertion(+)
  create mode 100644 pluto.txt
 ~~~
-{:class="out"}
 
-<div class="keypoints" markdown="1">
-
-#### Key Points
+### Key Points
 *   A local Git repository can be connected to one or more remote repositories.
 *   Use the HTTPS protocol to connect to remote repositories until you have learned how to set up SSH.
 *   `git push` copies changes from a local repository to a remote repository.
 *   `git pull` copies changes from a remote repository to a local repository.
 *   `git clone` copies a remote repository to create a local repository with a remote called `origin` automatically set up.
 
-</div>
 
-<div class="challenge" markdown="1">
+### Challenge
 Create a repository on GitHub,
 clone it,
 add a file,
 push those changes to GitHub,
 and then look at the [timestamp](../../gloss.html#timestamp) of the change on GitHub.
 How does GitHub record times, and why?
-</div>
