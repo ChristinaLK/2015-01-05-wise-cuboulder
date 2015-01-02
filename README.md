@@ -33,7 +33,7 @@ Day 2
 ========
 | Time         | Topic                                   | Instructor   |
 | ------------ | --------------------------------------- |--------------|
-| 09:00 - 10:30	| Building programs with Python 	| Leah, Mariela  |
+| 09:00 - 10:30	| Building programs with Python 	| Leah, Christina  |
 | 10:30 - 10:45	| Coffee break 	|   |
 | 10:45 - 12:00	| Test driven development 	| Mariela  |
 | 12:00 - 1:00	| Lunch break 	|   |
