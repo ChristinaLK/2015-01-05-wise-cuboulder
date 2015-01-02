@@ -39,5 +39,5 @@ Day 2
 | 12:00 - 1:00	| Lunch break 	|   |
 | 1:00 - 2:45	| Collaborating with Git 	| Rachel |
 | 2:45 - 3:00	| Coffee break 	|   |
-| 3:00-4:00	| Collaborative exercise 	| Christina/all |
+| 3:00-4:00	| Collaborative exercise 	| all |
 | 4:00 - 4:30	| Wrap-up 	| all |
