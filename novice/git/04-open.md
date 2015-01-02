@@ -248,8 +248,6 @@ but many institutions may not allow researchers to do this,
 either because they want to protect future patent applications
 or simply because what's new is often also frightening.
 
-<div class="keypoints" markdown="1">
-
 ### Key Points
 *   Open scientific work is more useful and more highly cited than closed.
 *   People who incorporate GPL'd software into theirs must make theirs open;
@@ -266,10 +264,6 @@ or simply because what's new is often also frightening.
 *   Rules regarding intellectual property and storage of sensitive information apply
     no matter where code and data are hosted.
 
-</div>
-
-<div class="challenge" markdown="1">
-
 ### Challenge
 Find out whether you are allowed to apply an open license to your software.
 Can you do this unilaterally,
@@ -280,4 +274,3 @@ Find out whether you are allowed to host your work openly on a public forge.
 Can you do this unilaterally,
 or do you need permission from someone in your institution?
 If so, who?
-</div>
