@@ -81,11 +81,11 @@ go into the local `planets` repository,
 and run this command:
 
 ~~~
-$ git remote add origin https://github.com/vlad/planets
+$ git remote add origin https://github.com/viorica/planets
 ~~~
 
-Make sure to use the URL for your repository rather than Vlad's:
-the only difference should be your username instead of `vlad`.
+Make sure to use the URL for your repository rather than Viorica's:
+the only difference should be your username instead of `viorica`.
 
 We can check that the command has worked by running `git remote -v`:
 
@@ -93,8 +93,8 @@ We can check that the command has worked by running `git remote -v`:
 $ git remote -v
 ~~~
 ~~~
-origin   https://github.com/vlad/planets.git (push)
-origin   https://github.com/vlad/planets.git (fetch)
+origin   https://github.com/viorica/planets.git (push)
+origin   https://github.com/viorica/planets.git (fetch)
 ~~~
 
 The name `origin` is a local nickname for your remote repository:
@@ -114,7 +114,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
-To https://github.com/vlad/planets
+To https://github.com/viorica/planets
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ~~~
@@ -168,7 +168,7 @@ We can pull changes from the remote repository to the local one as well:
 $ git pull origin master
 ~~~
 ~~~
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ~~~
@@ -200,10 +200,10 @@ The other partner should `cd` to another directory
 and then make a copy of this repository on your own computer:
 
 ~~~
-$ git clone https://github.com/vlad/planets.git
+$ git clone https://github.com/viorica/planets.git
 ~~~
 
-Replace 'vlad' with your partner's username (the one who owns the repository).
+Replace 'viorica' with your partner's username (the one who owns the repository).
 
 `git clone` creates a fresh local copy of a remote repository.
 
@@ -239,7 +239,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
+To https://github.com/viorica/planets.git
    9272da5..29aba7c  master -> master
 ~~~
 
@@ -260,7 +260,7 @@ remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Updating 9272da5..29aba7c
 Fast-forward
