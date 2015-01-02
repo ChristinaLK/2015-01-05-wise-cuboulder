@@ -119,7 +119,7 @@ To https://github.com/vlad/planets
 Branch master set up to track remote branch master from origin.
 ~~~
 
-> ##### Proxy
+> #### Proxy
 >
 > If the network you are connected to uses a proxy there is an chance that your last
 > command failed with "Could not resolve hostname" as the error message. To
@@ -154,7 +154,7 @@ Branch master set up to track remote branch master from origin.
 
 Our local and remote repositories are now in this state:
 
-<img src="img/github-repo-after-first-push.svg" alt="GitHub Repository After First Push" />
+<img src="img/github-repo-after-first-push.png" alt="GitHub Repository After First Push" />
 
 > #### The '-u' Flag
 >
@@ -182,7 +182,7 @@ this command would download them to our local repository.
 For the next step, get into pairs.
 Pick one of your repositories on Github to use for collaboration.
 
-> #### Practicing by yourself
+<!-- > #### Practicing by yourself -->
 >
 > If you're working through this lesson on your own, you can carry on by opening
 > a second terminal window, and switching to another directory (e.g. `/tmp`).
@@ -207,7 +207,7 @@ Replace 'vlad' with your partner's username (the one who owns the repository).
 
 `git clone` creates a fresh local copy of a remote repository.
 
-<img src="img/github-collaboration.svg" alt="After Creating Clone of Repository" />
+<img src="img/github-collaboration.png" alt="After Creating Clone of Repository" />
 
 The new collaborator can now make a change in their copy of the repository:
 
