@@ -11,6 +11,7 @@ title: Open Science
 *   Outline options for hosting code and data and the pros and cons of each.
 
 
+### Open Science
 <blockquote>
 The opposite of "open" isn't "closed".
 The opposite of "open" is "broken".
