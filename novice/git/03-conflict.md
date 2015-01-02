@@ -27,7 +27,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -39,7 +39,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 This line added to Sarah's copy
 ~~~
@@ -63,7 +63,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 352 bytes, done.
 Total 3 (delta 1), reused 0 (delta 0)
-To https://github.com/vlad/planets
+To https://github.com/viorica/planets
    29aba7c..dabb4c8  master -> master
 ~~~
 
@@ -78,7 +78,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 We added a different line in the other copy
 ~~~
@@ -100,9 +100,9 @@ but Git won't let us push it to GitHub:
 $ git push origin master
 ~~~
 ~~~
-To https://github.com/vlad/planets.git
+To https://github.com/viorica/planets.git
  ! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to 'https://github.com/vlad/planets.git'
+error: failed to push some refs to 'https://github.com/viorica/planets.git'
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
 hint: before pushing again.
@@ -126,7 +126,7 @@ remote: Counting objects: 5, done.
 remote: Compressing objects: 100% (2/2), done.        
 remote: Total 3 (delta 1), reused 3 (delta 1)        
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Auto-merging mars.txt
 CONFLICT (content): Merge conflict in mars.txt
@@ -141,7 +141,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 <<<<<<< HEAD
 We added a different line in the other copy
@@ -168,7 +168,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
@@ -209,7 +209,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (6/6), 697 bytes, done.
 Total 6 (delta 2), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
+To https://github.com/viorica/planets.git
    dabb4c8..2abf2b1  master -> master
 ~~~
 
@@ -225,7 +225,7 @@ remote: Counting objects: 10, done.
 remote: Compressing objects: 100% (4/4), done.        
 remote: Total 6 (delta 2), reused 6 (delta 2)        
 Unpacking objects: 100% (6/6), done.
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Updating dabb4c8..2abf2b1
 Fast-forward
@@ -240,7 +240,7 @@ $ cat mars.txt
 ~~~
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
