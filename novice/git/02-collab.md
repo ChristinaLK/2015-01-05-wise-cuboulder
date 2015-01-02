@@ -3,14 +3,10 @@ layout: lesson
 root: ../..
 title: Collaborating
 ---
-<div class="objectives" markdown="1">
-
-#### Objectives
+### Objectives
 *   Explain what remote repositories are and why they are useful.
 *   Explain what happens when a remote repository is cloned.
 *   Explain what happens when changes are pushed to or pulled from a remote repository.
-
-</div>
 
 Version control really comes into its own
 when we begin to collaborate with other people.
@@ -48,12 +44,11 @@ $ mkdir planets
 $ cd planets
 $ git init
 ~~~
-{:class="in"}
 
 Our local repository still contains our earlier work on `mars.txt`,
 but the remote repository on GitHub doesn't contain any files yet:
 
-<img src="img/git-freshly-made-github-repo.svg" alt="Freshly-Made GitHub Repository" />
+<img src="img/git-freshly-made-github-repo.png" alt="Freshly-Made GitHub Repository" />
 
 The next step is to connect the two repositories.
 We do this by making the GitHub repository a [remote](../../gloss.html#remote-repository)
