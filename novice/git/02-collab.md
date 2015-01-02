@@ -183,11 +183,11 @@ For the next step, get into pairs.
 Pick one of your repositories on Github to use for collaboration.
 
 <!-- > #### Practicing by yourself -->
->
-> If you're working through this lesson on your own, you can carry on by opening
-> a second terminal window, and switching to another directory (e.g. `/tmp`).
-> This window will represent your partner, working on another computer. You
-> won't need to give anyone access on Github, because both 'partners' are you.
+<!-- > -->
+<!-- > If you're working through this lesson on your own, you can carry on by opening -->
+<!-- > a second terminal window, and switching to another directory (e.g. `/tmp`). -->
+<!-- > This window will represent your partner, working on another computer. You -->
+<!-- > won't need to give anyone access on Github, because both 'partners' are you. -->
 
 The partner whose repository is being used needs to give the other person access.
 On Github, click the settings button on the right,
@@ -243,7 +243,7 @@ To https://github.com/vlad/planets.git
    9272da5..29aba7c  master -> master
 ~~~
 
-Note that we didn't have to create a remote called `origin`:
+Note that we didn't have to create a remote called `origin`,
 Git does this automatically,
 using that name,
 when we clone a repository.
@@ -279,8 +279,8 @@ Fast-forward
 
 ### Challenge
 Create a repository on GitHub,
-clone it,
-add a file,
-push those changes to GitHub,
-and then look at the [timestamp](../../gloss.html#timestamp) of the change on GitHub.
+*    clone it,
+*    add a file,
+*    push those changes to GitHub,
+*    and then look at the [timestamp](../../gloss.html#timestamp) of the change on GitHub.
 How does GitHub record times, and why?
