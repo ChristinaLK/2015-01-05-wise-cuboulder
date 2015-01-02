@@ -3,15 +3,13 @@ layout: lesson
 root: ../..
 title: Open Science
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+### Objectives
 *   Explain how the GNU General Public License (GPL) differs from most other open licenses.
 *   Explain the four kinds of restrictions that can be combined in a Creative Commons license.
 *   Correctly add licensing and citation information to a project repository.
 *   Outline options for hosting code and data and the pros and cons of each.
 
-</div>
 
 <blockquote>
 The opposite of "open" isn't "closed".
@@ -184,7 +182,6 @@ You may also want to include a file called `CITATION` or `CITATION.txt`
 that describes how to reference your project;
 the one for Software Carpentry states:
 
-<div class="file" markdown="1">
 ~~~
 To reference Software Carpentry in publications, please cite both of the following:
 
@@ -199,7 +196,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". arXiv:1307.5448, July 2013.
   eprint      = {1307.5448}
 }
 ~~~
-</div>
 
 ### Hosting
 
@@ -254,7 +250,7 @@ or simply because what's new is often also frightening.
 
 <div class="keypoints" markdown="1">
 
-#### Key Points
+### Key Points
 *   Open scientific work is more useful and more highly cited than closed.
 *   People who incorporate GPL'd software into theirs must make theirs open;
     most other open licenses do not require this.
@@ -273,13 +269,13 @@ or simply because what's new is often also frightening.
 </div>
 
 <div class="challenge" markdown="1">
+
+### Challenge
 Find out whether you are allowed to apply an open license to your software.
 Can you do this unilaterally,
 or do you need permission from someone in your institution?
 If so, who?
-</div>
 
-<div class="challenge" markdown="1">
 Find out whether you are allowed to host your work openly on a public forge.
 Can you do this unilaterally,
 or do you need permission from someone in your institution?
