@@ -3,14 +3,12 @@ layout: lesson
 root: ../..
 title: Conflicts
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+### Objectives
 *   Explain what conflicts are and when they can occur.
 *   Resolve conflicts resulting from a merge.
 
-</div>
-
+### Conflicts
 As soon as people can work in parallel,
 someone's going to step on someone else's toes.
 This will even happen with a single person:
@@ -27,13 +25,11 @@ in both partners' copies of our `planets` repository:
 ~~~
 $ cat mars.txt
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 ~~~
-{:class="out"}
 
 Let's add a line to **one partner's copy** only:
 
@@ -41,14 +37,12 @@ Let's add a line to **one partner's copy** only:
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 This line added to Sarah's copy
 ~~~
-{:class="out"}
 
 and then push the change to GitHub:
 
@@ -56,16 +50,13 @@ and then push the change to GitHub:
 $ git add mars.txt
 $ git commit -m "Adding a line in our home copy"
 ~~~
-{:class="in"}
 ~~~
 [master 5ae9631] Adding a line in our home copy
  1 file changed, 1 insertion(+)
 ~~~
-{:class="out"}
 ~~~
 $ git push origin master
 ~~~
-{:class="in"}
 ~~~
 Counting objects: 5, done.
 Delta compression using up to 4 threads.
@@ -75,7 +66,6 @@ Total 3 (delta 1), reused 0 (delta 0)
 To https://github.com/vlad/planets
    29aba7c..dabb4c8  master -> master
 ~~~
-{:class="out"}
 
 Now let's have the other partner
 make a different change to their copy
@@ -86,14 +76,12 @@ $ cd /tmp/planets
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 We added a different line in the other copy
 ~~~
-{:class="out"}
 
 We can commit the change locally:
 
@@ -101,19 +89,16 @@ We can commit the change locally:
 $ git add mars.txt
 $ git commit -m "Adding a line in my copy"
 ~~~
-{:class="in"}
 ~~~
 [master 07ebc69] Adding a line in my copy
  1 file changed, 1 insertion(+)
 ~~~
-{:class="out"}
 
 but Git won't let us push it to GitHub:
 
 ~~~
 $ git push origin master
 ~~~
-{:class="in"}
 ~~~
 To https://github.com/vlad/planets.git
  ! [rejected]        master -> master (non-fast-forward)
@@ -123,9 +108,8 @@ hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
 hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ~~~
-{:class="out"}
 
-<img src="img/conflict.svg" alt="The conflicting changes" />
+<img src="img/conflict.png" alt="The conflicting changes" />
 
 Git detects that the changes made in one copy overlap with those made in the other
 and stops us from trampling on our previous work.
@@ -137,7 +121,6 @@ Let's start by pulling:
 ~~~
 $ git pull origin master
 ~~~
-{:class="in"}
 ~~~
 remote: Counting objects: 5, done.        
 remote: Compressing objects: 100% (2/2), done.        
@@ -149,7 +132,6 @@ Auto-merging mars.txt
 CONFLICT (content): Merge conflict in mars.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ~~~
-{:class="out"}
 
 `git pull` tells us there's a conflict,
 and marks that conflict in the affected file:
@@ -157,7 +139,6 @@ and marks that conflict in the affected file:
 ~~~
 $ cat mars.txt
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
@@ -168,7 +149,6 @@ We added a different line in the other copy
 This line added to Sarah's copy
 >>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ~~~
-{:class="out"}
 
 Our change---the one in `HEAD`---is preceded by `<<<<<<<`.
 Git has then inserted `=======` as a separator between the conflicting changes
@@ -186,14 +166,12 @@ Let's replace both so that the file looks like this:
 ~~~
 $ cat mars.txt
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
-{:class="out"}
 
 To finish merging,
 we add `mars.txt` to the changes being made by the merge
@@ -203,7 +181,6 @@ and then commit:
 $ git add mars.txt
 $ git status
 ~~~
-{:class="in"}
 ~~~
 # On branch master
 # All conflicts fixed but you are still merging.
@@ -214,22 +191,18 @@ $ git status
 #	modified:   mars.txt
 #
 ~~~
-{:class="out"}
 ~~~
 $ git commit -m "Merging changes from GitHub"
 ~~~
-{:class="in"}
 ~~~
 [master 2abf2b1] Merging changes from GitHub
 ~~~
-{:class="out"}
 
 Now we can push our changes to GitHub:
 
 ~~~
 $ git push origin master
 ~~~
-{:class="in"}
 ~~~
 Counting objects: 10, done.
 Delta compression using up to 4 threads.
@@ -239,7 +212,6 @@ Total 6 (delta 2), reused 0 (delta 0)
 To https://github.com/vlad/planets.git
    dabb4c8..2abf2b1  master -> master
 ~~~
-{:class="out"}
 
 Git keeps track of what we've merged with what,
 so we don't have to fix things by hand again
@@ -248,7 +220,6 @@ when the collaborator who made the first change pulls again:
 ~~~
 $ git pull origin master
 ~~~
-{:class="in"}
 ~~~
 remote: Counting objects: 10, done.        
 remote: Compressing objects: 100% (4/4), done.        
@@ -261,21 +232,18 @@ Fast-forward
  mars.txt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 ~~~
-{:class="out"}
 
 we get the merged file:
 
 ~~~
 $ cat mars.txt 
 ~~~
-{:class="in"}
 ~~~
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 We removed the conflict on this line
 ~~~
-{:class="out"}
 
 We don't need to merge again because Git knows someone has already done that.
 
@@ -288,26 +256,21 @@ the version control system is essentially trying to tell its users
 that they ought to clarify who's responsible for what,
 or find a way to divide the work up differently.
 
-<div class="keypoints" markdown="1">
 
-#### Key Points
+### Key Points
 *   Conflicts occur when two or more people change the same file(s) at the same time.
 *   The version control system does not allow people to blindly overwrite each other's changes.
     Instead, it highlights conflicts so that they can be resolved.
 
-</div>
 
-<div class="challenge" markdown="1">
+### Challenge
 Clone the repository created by your instructor.
-Add a new file to it,
-and modify an existing file (your instructor will tell you which one).
-When asked by your instructor,
+*    Add a new file to it,
+*    and modify an existing file (your instructor will tell you which one).
+*    When asked by your instructor,
 pull her changes from the repository to create a conflict,
 then resolve it.
-</div>
 
-<div class="challenge" markdown="1">
 What does Git do
 when there is a conflict in an image or some other non-textual file
 that is stored in version control?
-</div>
