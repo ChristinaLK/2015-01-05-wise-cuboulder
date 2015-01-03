@@ -29,23 +29,24 @@
 
 ## New Commands
 
-* echo
-* less
-* cat
-* head
-* grep
-* wc
-* sort
+* echo sunspot.txt
+* less sunspot.txt
+* cat sunspot.txt
+* head -5 planets.txt
+* grep proline amino-acids.txt
+* wc -c morse.txt
+* sort -r planets.txt
 
 ## Task
 
 Find out what this command does generally.  What would this specific command do?  If relevant, what other options are there?  What might you use this for in a research setting?  Write your findings on the etherpad.  
 
-##Quiz
+##Check-in
 
-Guess what this does: 
+Guess what these commands do: 
 
 ~~~
+tail -20 sunspot.txt
 cut -d , -f 1,5 Analytics_Fall2013.csv
 ~~~
 
@@ -73,6 +74,8 @@ What text passes through each of the pipes and the final redirect in the pipelin
 ~~~
 cat animals.txt | head -5 | tail -3 | sort -r > final.txt
 ~~~
+
+* Write a piped command that prints the number of files/directories listed in a directory.  
 
 * The command `uniq` removes adjacent duplicated lines from its input.
 For example, if a file `salmon.txt` contains:

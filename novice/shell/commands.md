@@ -11,7 +11,15 @@
 | cp |
 | rm |
 | rmdir |
-| (quiz list) |
+| echo |
+| less |
+| cat |
+| head | 
+| grep | 
+| wc |
+| tail | 
+| sort | 
+| crush | 
 | cut  |
 | bash |
 
