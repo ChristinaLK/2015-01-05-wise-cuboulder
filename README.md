@@ -20,7 +20,7 @@ Day 1
 | ------------ | --------------------------------------- |--------------|
 |08:30-9:00	| Setup help	|   |
 |09:00-9:30	| Introductions and orientation		| Christina |
-|09:30-10:30	| Automating tasks with the Unix shell [1](http://www.software-carpentry.org/v5/novice/shell/01-filedir.html) and [2](http://www.software-carpentry.org/v5/novice/shell/02-create.html) | Christina |
+|09:30-10:30	| Automating tasks with the Unix shell [Exercises](https://github.com/ChristinaLK/2015-01-05-wise-cuboulder/blob/master/novice/shell/exercises.md)  [1](http://www.software-carpentry.org/v5/novice/shell/01-filedir.html) and [2](http://www.software-carpentry.org/v5/novice/shell/02-create.html) | Christina |
 |10:30 - 10:45	| Coffee break |   |
 |10:45 - 12:00	| Automating tasks with the Unix shell, lessons [3](http://www.software-carpentry.org/v5/novice/shell/03-pipefilter.html) and [4](http://www.software-carpentry.org/v5/novice/shell/05-script.html) | Christina |
 |12:00 - 1:00	| Lunch break |   |
