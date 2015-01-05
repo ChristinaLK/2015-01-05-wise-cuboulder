@@ -6,7 +6,7 @@ Carpentry workshop at the University of Colorado, Boulder, in partnership with
 Women in Science and Engineering (WiSE).  
 
 [Website here](http://christinalk.github.io/2015-01-05-wise-cuboulder)  
-[Etherpad here]()
+[Etherpad here](https://etherpad.mozilla.org/2015-01-05-wise-boulder)
 
 Most lesson materials are contained in the `novice` folder above.  Your instructors are:
 * Christina Koch: @ChristinaLK on github, @_christinaLK on twitter
