@@ -264,9 +264,9 @@ or find a way to divide the work up differently.
 
 
 ### Challenge
-Clone the repository created by your instructor.
+Clone the JellyBeanCode repository: https://github.com/rachelslaybaugh/JellyBeanCode.git
 *    Add a new file to it,
-*    and modify an existing file (your instructor will tell you which one).
+*    and modify the existing ExampleInput.py
 *    When asked by your instructor,
 pull her changes from the repository to create a conflict,
 then resolve it.
