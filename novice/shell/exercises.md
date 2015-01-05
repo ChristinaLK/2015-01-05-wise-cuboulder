@@ -9,10 +9,9 @@
 
 ##Filesystem Exercises
 
-* Use three different ways to get from `/filesystem/data/backup` to `filesystem/nelle/molecules`.  
-
 * Make a quick diagram of Nelle's directory structure.
 
+* Use three different ways to get from `/filesystem/data/backup` to `filesystem/nelle/molecules`.  
 
 -------------
 
