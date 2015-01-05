@@ -12,7 +12,7 @@ Most lesson materials are contained in the `novice` folder above.  Your instruct
 * Christina Koch: @ChristinaLK on github, @_christinaLK on twitter
 * Rachel Slaybaugh
 * Mariela Perignon
-* Leah Wasser 
+* Leah Wasser: GITHUB: @lwasser, TWITTER: @leahawasser 
 
 Day 1
 =======
