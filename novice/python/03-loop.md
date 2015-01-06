@@ -38,7 +38,7 @@ def analyze(filename):
 analyze(&#39;inflammation-01.csv&#39;)</code></pre>
 
 <div class="out">
-<img src="../../novice/python/03-loop_files/novice/python/03-loop_2_0.png">
+<img src="img/03-loop_2_0.png">
 </div>
 
 
@@ -48,7 +48,7 @@ We can use it to analyze other data sets one by one:
 <pre class="in"><code>analyze(&#39;inflammation-02.csv&#39;)</code></pre>
 
 <div class="out">
-<img src="../../novice/python/03-loop_files/novice/python/03-loop_4_0.png">
+<img src="img/03-loop_4_0.png">
 </div>
 
 
