@@ -68,11 +68,9 @@ Click on the 'HTTPS' link to change the [protocol](../../gloss.html#protocol) fr
 > secure, by following one of the great tutorials from
 > [GitHub](https://help.github.com/articles/generating-ssh-keys),
 > [Atlassian/BitBucket](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
-> and [GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
+> or [GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
 > (this one has a screencast).
 >
-> If want to know more about SSH we invite you to check [our small lesson
-> about it](../extras/07-ssh.html).
 
 <img src="img/github-change-repo-string.png" alt="Changing the Repository URL on GitHub" />
 
@@ -243,12 +241,12 @@ To https://github.com/viorica/planets.git
    9272da5..29aba7c  master -> master
 ~~~
 
-Note that we didn't have to create a remote called `origin`,
-Git does this automatically,
-using that name,
+Note that we didn't have to create a remote called `origin`.
+Git does this automatically
+ (using that name)
 when we clone a repository.
-(This is why `origin` was a sensible choice earlier
-when we were setting up remotes by hand.)
+This is why `origin` was a sensible choice earlier
+when we were setting up remotes by hand.
 
 We can now download changes into the original repository on our machine:
 
